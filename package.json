@@ -1,0 +1,19 @@
+{
+  "name": "tartare",
+  "version": "1.0.0",
+  "description": "Tartare is an encrypted messaging plateform that uses the RSA algorithm to encrypt messages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dakokonutboi/tartare-app.git"
+  },
+  "author": "Boutaib Ghali Omar and Amine Magouh",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dakokonutboi/tartare-app/issues"
+  },
+  "homepage": "https://github.com/dakokonutboi/tartare-app#readme"
+}
