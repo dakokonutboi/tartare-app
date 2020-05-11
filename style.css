@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Muli&display=swap');
+
+body {
+  background-color: #12100E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Muli', sans-serif;
+  color: #FEFEFD;
+}
