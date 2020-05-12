@@ -9,7 +9,7 @@ function createWindow () {
       nodeIntegration: true
     },
     resizable: false,
-    icon: __dirname + '/logo.png'
+    icon: __dirname + '/tartareicon.ico'
     //,frame: false
   })
   // and load the index.html of the app.
