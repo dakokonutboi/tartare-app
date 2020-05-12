@@ -1,15 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Muli&display=swap');
 
+:root {
+  --primary-dark: #0B3948;
+  --primary-light: #416165;
+  --secondary-dark: #A30B37;
+  --secondary-light: #BD6B73;
+  --fore: #D9DBF1;
+}
+
+:focus { outline: none; }
+
 body {
-  background-color: #12100E;
+  background-color: var(--primary-dark);
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Muli', sans-serif;
-  color: #FEFEFD;
+  color: var(--fore);
 }
 
 p, a, label {
   font-family: 'Montserrat', sans-serif;
-  color: #FEFEFD;
+  color: var(--fore);
+}
+
+.input {
+  border-radius: 5px;
+  width: 100%;
+  font-size: 12pt;
+  padding: 10px;
+  border: 2px solid var(--primary-light);
+  background-color: var(--primary-light);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--fore);
+}
+
+.button {
+  border-radius: 5px;
+  font-size: 12pt;
+  padding: 10px;
+  border: 2px solid var(--secondary-dark);
+  background-color: var(--secondary-dark);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--fore);
+}
+
+.button:hover {
+  border: 2px solid var(--secondary-light);
+  background-color: var(--secondary-dark);
+}
+
+.contentor {
+  margin: 45px;
 }
