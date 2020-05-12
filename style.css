@@ -11,18 +11,18 @@
 :focus { outline: none; }
 
 body {
-  background-color: var(--primary-dark);
+  background-color: var(--fore);
   font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Muli', sans-serif;
-  color: var(--fore);
+  color: var(--secondary-dark);
 }
 
 p, a, label {
   font-family: 'Montserrat', sans-serif;
-  color: var(--fore);
+  color: var(--secondary-dark);
 }
 
 .input {
@@ -40,15 +40,15 @@ p, a, label {
   border-radius: 5px;
   font-size: 12pt;
   padding: 10px;
-  border: 2px solid var(--secondary-dark);
-  background-color: var(--secondary-dark);
+  border: 2px solid var(--primary-dark);
+  background-color: var(--primary-dark);
   font-family: 'Montserrat', sans-serif;
   color: var(--fore);
 }
 
 .button:hover {
-  border: 2px solid var(--secondary-light);
-  background-color: var(--secondary-dark);
+  border: 2px solid var(--primary-light);
+  background-color: var(--primary-dark);
 }
 
 .contentor {
