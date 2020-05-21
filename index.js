@@ -1,14 +1,16 @@
 const { app, BrowserWindow } = require('electron')
+const electron = require('electron')
+const ipc = electron.ipcRenderer
 
 function createWindow () {
   // Create the browser window.
   const win = new BrowserWindow({
     width: 400,
-    height: 400,
+    height: 500,
     webPreferences: {
       nodeIntegration: true
     },
-    //resizable: false,
+    resizable: false,
     icon: __dirname + '/tartareicon.ico'
     //,frame: false
   })
@@ -17,7 +19,7 @@ function createWindow () {
   win.loadFile('index.html')
 
   // Open the DevTools.
-  win.webContents.openDevTools()
+  //win.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
@@ -41,6 +43,23 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+function golog(){
+  const client = new BrowserWindow({
+    width: 1920,
+    height: 1080,
+    webPreferences: {
+      nodeIntegration: true
+    },
+    //resizable: false,
+    icon: __dirname + '/tartareicon.ico'
+    //,frame: false
+  })
+  // and load the index.html of the app.
+  client.removeMenu()
+  client.loadFile('hub.html')
+
+}
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
