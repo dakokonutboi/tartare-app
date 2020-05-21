@@ -1,6 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 const electron = require('electron')
-const ipc = electron.ipcRenderer
+const ipc = electron.ipcMain
+
 
 function createWindow () {
   // Create the browser window.
@@ -19,7 +20,7 @@ function createWindow () {
   win.loadFile('index.html')
 
   // Open the DevTools.
-  //win.webContents.openDevTools()
+  win.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
@@ -58,8 +59,13 @@ function golog(){
   // and load the index.html of the app.
   client.removeMenu()
   client.loadFile('hub.html')
+  client.maximize()
 
 }
+
+ipc.on('open-hub', function(event){
+  golog()
+})
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
