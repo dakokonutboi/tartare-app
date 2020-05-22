@@ -6,8 +6,8 @@ const ipc = electron.ipcMain
 function createWindow () {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 400,
-    height: 500,
+    width: 450,
+    height: 450,
     webPreferences: {
       nodeIntegration: true
     },
@@ -60,6 +60,7 @@ function golog(){
   client.removeMenu()
   client.loadFile('hub.html')
   client.maximize()
+  //client.webContents.openDevTools()
 
 }
 

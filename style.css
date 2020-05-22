@@ -78,7 +78,6 @@ p, a, label {
   height: 100vh;
   width: 15%;
   background: var(--fore);
-  border-right: 6px solid var(--primary-dark);
 }
 
 .right {
@@ -101,6 +100,11 @@ p, a, label {
   margin-top: 40px;
 }
 
+.discussiontitle:hover {
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
 
 .seldisc {
   font-size: 26px;
@@ -114,6 +118,10 @@ p, a, label {
   background-color: var(--primary-dark-tra);
   padding: 5px;
   padding-left: 20px;
+}
+
+.discussiontitle {
+  color: black;
 }
 
 .dot {
