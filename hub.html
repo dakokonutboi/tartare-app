@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <title>tartare</title>
@@ -7,9 +7,39 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <div class="contentor">
-      <h1>HUB</h1>
+    <div class="row">
+      <div class="column left">
+        <div id="unrmsgdiv" class="unrmsg">
+          <h3>Unread messages: X</h3>
+        </div>
+        <div id="discussionsdiv" class="discussions">
+          <div class="discussion">
+            <h4>Hamidoux<img class="dot" src="dot.png"></h4>
+          </div>
+          <div class="discussion selected">
+            <h4>Super Arouuf<img class="dot" src="dot.png"></h4>
+          </div>
+          <div class="discussion">
+            <h4>Spipoux<img class="dot" src="dot.png"></h4>
+          </div>
+          <div class="discussion">
+            <h4>LOREMIPSUMDOLORE<img class="dot" src="dot.png"></h4>
+          </div>
+          <div class="discussion">
+            <h4>7lib Jaouda<img class="dot" src="dot.png"></h4>
+          </div>
+          <div class="discussion">
+            <h4>Marka m9owda<img class="dot" src="dot.png"></h4>
+          </div>
+        </div>
+      </div>
+
+      <div id="rcolmes" class="column right">
+        <div class="seldisc">
+        <h1>Select a discussion to get started...</h1>
+      </div>
     </div>
     <script src="hub.js"></script>
   </body>

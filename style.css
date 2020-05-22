@@ -2,6 +2,7 @@
 
 :root {
   --primary-dark: #0B3948;
+  --primary-dark-tra: #0B39483C;
   --primary-light: #416165;
   --secondary-dark: #A30B37;
   --secondary-light: #BD6B73;
@@ -11,6 +12,9 @@
 :focus { outline: none; }
 
 body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
   background-color: var(--fore);
   font-family: 'Montserrat', sans-serif;
 }
@@ -53,4 +57,67 @@ p, a, label {
 
 .contentor {
   margin: 45px;
+}
+
+.column {
+  float: left;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left {
+  height: 100vh;
+  width: 15%;
+  background: var(--fore);
+  border-right: 6px solid var(--primary-dark);
+}
+
+.right {
+  height: 100vh;
+  width: 85%;
+  background: var(--primary-dark)
+}
+
+.unrmsg {
+  font-size: 20px;
+  font-family: 'Montserrat Light', sans-serif;
+  color: var(--secondary-dark);
+  padding-left: 20px;
+}
+
+.discussion {
+  font-size: 22px;
+  padding-left: 20px;
+  font-family: 'Muli Light', sans-serif;
+  margin-top: 40px;
+}
+
+
+.seldisc {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 400px;
+  font-family: 'Montserrat Light', sans-serif;
+  color: var(--secondary-dark)
+}
+
+.selected {
+  background-color: var(--primary-dark-tra);
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.dot {
+  float: right;
+  padding-top: 8px;
+  margin-right: 5px;
 }
