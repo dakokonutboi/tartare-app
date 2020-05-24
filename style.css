@@ -91,6 +91,7 @@ p, a, label {
   font-family: 'Montserrat Light', sans-serif;
   color: var(--secondary-dark);
   padding-left: 20px;
+  border-bottom: 5px solid var(--secondary-dark);
 }
 
 .discussion {

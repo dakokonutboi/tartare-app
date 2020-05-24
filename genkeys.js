@@ -14,6 +14,7 @@ function goback(){
 }
 
 function checkusername(){
+  displayer.innerHTML = "<h1>Checking...</h1><p>Checking for username availability...</p>"
   axios.get('http://tartanserver.herokuapp.com/check.php', {
     params: {
         username: usernamebox.value

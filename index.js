@@ -1,6 +1,9 @@
 const { app, BrowserWindow } = require('electron')
 const electron = require('electron')
 const ipc = electron.ipcMain
+const axios = require('axios')
+const fs = require('fs')
+const { dialog } = require('electron')
 
 
 function createWindow () {
@@ -60,7 +63,7 @@ function golog(){
   client.removeMenu()
   client.loadFile('hub.html')
   client.maximize()
-  //client.webContents.openDevTools()
+  client.webContents.openDevTools()
 
 }
 
