@@ -1,3 +1,3 @@
 node_modules
-tartare_private_key.tart
-tartare_public_key.tart
+tartare_private.pem
+tartare_public.pem

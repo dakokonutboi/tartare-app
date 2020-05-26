@@ -5,6 +5,7 @@ const axios = require('axios')
 const fs = require('fs')
 const { dialog } = require('electron')
 
+const serverhost = 'http://localhost:5000/'
 
 function createWindow () {
   // Create the browser window.

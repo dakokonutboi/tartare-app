@@ -4,7 +4,7 @@ const ipc = electron.ipcRenderer
 
 let remember = document.getElementById('remember')
 
-if (fs.existsSync('tartare_private_key.tart')) {
+if (fs.existsSync('tartare_private.pem')) {
   console.log('Private key exists')
   remember.innerHTML = '<button type="button" class="button" name="button" onclick="golog()">Use saved keys</button>'
 } else {
