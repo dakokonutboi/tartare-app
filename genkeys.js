@@ -31,7 +31,9 @@ function checkusername(){
       displayer.innerHTML = "<h1>Error</h1><p>"+response.data.message+"</p><button class='button' onclick='location.reload()'>Try again</button>"
     }
   }, (error) => {
-    console.log(error)
+    dialog.showErrorBox("Server-Client error", "There was an issue with the client-server connection. The app will restart")
+    app.relaunch()
+    app.exit()
   })
 
 }
