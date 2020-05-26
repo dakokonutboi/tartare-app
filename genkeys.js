@@ -1,6 +1,6 @@
 const child_process = require('child_process').execFileSync
 const electron = require('electron')
-const BrowserWindow = electron.remote.BrowserWindow
+const { app, BrowserWindow } = require('electron').remote
 const ipc = electron.ipcRenderer
 const axios = require('axios')
 const { dialog } = require('electron').remote
@@ -31,7 +31,7 @@ function checkusername(){
       displayer.innerHTML = "<h1>Error</h1><p>"+response.data.message+"</p><button class='button' onclick='location.reload()'>Try again</button>"
     }
   }, (error) => {
-    dialog.showErrorBox("Server-Client error", "There was an issue with the client-server connection. The app will restart")
+    dialog.showErrorBox("Server-Client error", "There was an issue with the client-server connection.\n Error log: "+error.toString()+"\n The app will restart.")
     app.relaunch()
     app.exit()
   })
