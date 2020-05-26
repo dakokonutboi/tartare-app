@@ -75,6 +75,8 @@ function golog() {
       app.exit()
     }
   }, (error) => {
-    console.log(error)
+    dialog.showErrorBox("Server-Client error", "There was an issue with the client-server connection.\n Error log: "+error.toString()+"\n The app will restart.")
+    app.relaunch()
+    app.exit()
   })
 }

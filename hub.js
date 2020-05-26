@@ -16,7 +16,7 @@ let pkfile = fs.readFileSync('tartare_private.pem')
 let private_key = new NodeRSA(pkfile, 'private')
 
 function login(){
-  var data = fs.readFileSync('tartare_public.pem')
+  let data = fs.readFileSync('tartare_public.pem')
   let sending = Math.floor(Date.now()/1000).toString()
   axios.get('http://localhost:5000/api/login', {
     params: {
