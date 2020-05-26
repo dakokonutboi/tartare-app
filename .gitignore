@@ -1,3 +1,4 @@
 node_modules
 tartare_private.pem
 tartare_public.pem
+.tern-project
