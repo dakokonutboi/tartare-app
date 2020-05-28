@@ -48,10 +48,18 @@ function done(){
   let private = key.exportKey('private')
   let public = key.exportKey('public')
   fs.writeFile('tartare_private.pem', private, function (err) {
-  if (err) return console.log(err)
+  if (err){
+    dialog.showErrorBox("File write error", "There was an issue with the client-server connection.\n Error log: "+err.toString()+"\n The app will restart.")
+    app.relaunch()
+    app.exit()
+  }
   })
   fs.writeFile('tartare_public.pem', public, function (err) {
-  if (err) return console.log(err)
+  if (err){
+    dialog.showErrorBox("File write error", "There was an issue with the client-server connection.\n Error log: "+err.toString()+"\n The app will restart.")
+    app.relaunch()
+    app.exit()
+  }
   })
   displayer.innerHTML = "<h1>Done.</h1><p>Your keys were generated. We're signing you up...</p>"
   setTimeout(golog, 500)
